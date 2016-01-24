@@ -8,25 +8,29 @@ body {
   clear: both;
   .member {
     float: left;
-    /*border: 1px solid gray;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
     margin: 10px;
     padding: 6px;
 
     img {
-    border-radius:50%;
-    width: 100px;
-    height: 100px;
+      border-radius:50%;
+      width: 100px;
+      height: 100px;
+      &:hover {
+        transform: rotate(360deg);
+        transition: all 1s;
+      }
     }
 
-    div.name {
-    text-align: center;  
+    .name {
+    text-align: left;
+      p {
+      font-size: 60%;
+      }
     }
   }
 }
 
-body {
-  h1 {
-    color: $primaryColor; 
-  }
-}
 

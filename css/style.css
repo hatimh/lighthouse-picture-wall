@@ -6,17 +6,21 @@ body {
   clear: both; }
   #team-members .member {
     float: left;
-    /*border: 1px solid gray;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
     margin: 10px;
     padding: 6px; }
     #team-members .member img {
       border-radius: 50%;
       width: 100px;
       height: 100px; }
-    #team-members .member div.name {
-      text-align: center; }
-
-body h1 {
-  color: #FF0000; }
+      #team-members .member img:hover {
+        transform: rotate(360deg);
+        transition: all 1s; }
+    #team-members .member .name {
+      text-align: left; }
+      #team-members .member .name p {
+        font-size: 60%; }
 
 /*# sourceMappingURL=style.css.map */
